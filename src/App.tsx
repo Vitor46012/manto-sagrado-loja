@@ -52,7 +52,7 @@ export interface CartItem {
 export interface ToastState { message: string | null; type: 'success' | 'error'; }
 
 // --- CONFIGURAÇÕES DA LOJA ---
-const WHATSAPP_NUMBER = "5511999999999"; 
+const WHATSAPP_NUMBER = "5541995996988"; 
 const ADMIN_CREDENTIALS = { username: "admin", password: "123" };
 
 export default function App() {
@@ -264,7 +264,7 @@ function CartSidebar({ cart, onClose, onRemove, total, whatsappNumber, setCart }
 
   const handleCheckout = () => {
     if (cart.length === 0) return;
-    let text = `Fala, campeão! ⚽ Gostaria de fechar o seguinte pedido:\n\n`;
+    let text = `Gostaria de fechar o seguinte pedido:\n\n`;
     cart.forEach((item, index) => {
       text += `*${index + 1}. ${item.product.name}*\n   Tamanho: ${item.size}\n`;
       if (item.customization && (item.customization.name || item.customization.number)) {
